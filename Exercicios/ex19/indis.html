@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a :visited{
+            color: purple;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow
+        }
+
+        a::after{
+            content: ' [link] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+
+        }
+    </style>
+</head>
+<body>
+    <H1>Personalizando Links</H1>
+    <ul>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+        <li><a href="https://ge.globo.com/?utm_source=barraGCOM">Globoesporte</a></li>
+        <li><a href="https://veja.abril.com.br/">Veja</a></li>
+    </ul>
+</body>
+</html>

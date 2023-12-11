@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmete aumente ou diminua o seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-png0.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-png1.png" type="image/png">
+        <img src="Imagens/foto-png2.png" alt="imagem flexível">
+    </picture>
+    <h1>Vamos aprender a reproduzir audio em HTML5</h1>
+    <audio src="midia/mozart.mp3" controls loop> </audio>
+    <h1>Adicionando Videos hospedados localmente.</h1>
+    <p>Este video está hospedado no meu proprio servidor.</p>
+    <video src="Video/pexels-emrullah-ağır-19059452 (240p).mp4" controls></video>
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/58ujlki8Vyw?si=YISsigx45JUGBtsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Video do VIMEO    </h1>
+    <iframe src="https://player.vimeo.com/video/192255066?h=585fa9835f&color=ff9933" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
