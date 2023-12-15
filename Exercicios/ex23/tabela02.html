@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.numero {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color:lightgray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    
+    <table>
+        <caption>População dos Estados do Sudeste</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44 411 238</td>
+            </tr>
+            <tr>
+               <td>Minas Gerais</td>
+               <td class="numero">20 538 718</td>
+            </tr>  
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Espiríto Santo</td>
+                <td class="numero">3 833 712</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes na região Sudeste</th>
+                <th scope="row"><strong>84 837 652</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
