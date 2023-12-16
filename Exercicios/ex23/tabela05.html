@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>]
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+
+        }
+
+        col.cidade{
+            background-color: blueviolet;
+        }
+        
+        tr,td {
+           border: 1px solid black; 
+           padding: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprosissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Masculino</td>
+            <td>33</td>
+            <td>Bombeiro</td>
+        </tr>
+        <tr>
+            <td>Gabriela</td>
+            <td>Feminino</td>
+            <td>28</td>
+            <td>Atleta</td>
+        </tr>
+        <tr class="destaque">
+            <td>Antonio</td>
+            <td>Masculino</td>
+            <td>24</td>
+            <td>Escritor</td>
+        </tr>
+        <tr>
+            <td>Geovana</td>
+            <td>Feminino</td>
+            <td>31</td>
+            <td>Professora</td>
+        </tr>
+    </table>
+</body>
+</html>
